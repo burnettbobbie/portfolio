@@ -1,10 +1,5 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
@@ -14,54 +9,55 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   squarespace,
   express,
   sass,
   php,
   sql,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  threejs,
   otzi,
+  otzi1,
+  otzi2,
+  otzi3,
+  otzi4,
+  otzi5,
+  otzi6,
   ocs,
+  ocs1,
+  ocs2,
+  ocs3,
+  ocs4,
+  ocs5,
+  ocs6,
   hospital,
-  theatre
+  theatre,
+  ltclogin,
+  ltcregister
 } from "../assets";
 
 export const navLinks = [
   {
     id: "skills",
-    title: "Skills",
+    title: "SKILLS",
   },
   {
     id: "work",
-    title: "Work",
+    title: "WORK",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "CONTACT",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Fullstack Developer"
   },
   {
-    title: "React Developer",
-    icon: mobile,
+    title: "React Developer"
   },
   {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "UI Designer",
-    icon: creator,
+    title: "UI Designer"
   },
 ];
 
@@ -77,10 +73,6 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",
@@ -103,20 +95,12 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
   {
     name: "squarespace",
@@ -141,93 +125,43 @@ const technologies = [
 
 ];
 
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
+    name: "OTZI",
+    description: "This was my first paid role after completing my course. The client wanted a website which was easy to maintain and update in the future, as well as seamless integration with their administrative system making the choice of a CMS most logical. It was useful to gain an understanding of using other content management systems, having previously worked with WordPress and modifying the Squarespace template code to afford a more engaging user experience. I particularly enjoyed the combining of custom code with Squarespace’s drag-and-drop interface, which facilitated a swift and streamlined development process, resulting in a fully responsive outcome that met and surpassed the client’s requirements. ",
+    tags: [
+      {
+        name: "git",
+        color: "white",
+        icon: git,
+      },
+      {
+        name: "javascript",
+        color: "white",
+        icon: javascript,
+      },
+      
+      {
+        name: "squarespace",
+        color: "white",
+        icon: squarespace,
+      },
+      {
+        name: "css3",
+        color: "white",
+        icon: css,
+      },
+    ],
+    images: [otzi2, otzi1, otzi,otzi3, otzi4,otzi5, otzi6],
+    source_code_link: "https://github.com/",
+    view_site: "https://otzi.ltd/"
+  },
+  {
     name: "The Local Theatre Company",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "I designed and developed a dynamic prototype for 'The Local Theatre Company,' featuring a blog-style platform for theatre enthusiasts to engage through comments on production articles. The project includes user sessions, registrations, logins, and distinct admin privileges. Admins oversee comments, manage user data, and create, update, and delete articles. The use of PHP and an SQL database managed via PhpMyAdmin ensured data storage efficiency and smooth integration whilst the interface boasts a clean, intuitive design focused on simplicity, placing theatre comments, writing and engagement at the forefront of the site.",
     tags: [
       {
         name: "PHP",
@@ -255,13 +189,13 @@ const projects = [
         icon: tailwind
       }
     ],
-    image: theatre,
-    source_code_link: "https://github.com/",
+    images:[ theatre, ltclogin, ltcregister],
+    source_code_link: "#",
+    view_site: "https://rburnett.student-hosting.college/TheLocalTheatreCompany/"
   },
   {
     name: "Obanshire Cub Scouts",
-    description:
-      "Web-based platform that  I crafted a user-friendly website that serves as a hub for the Cub Scouts community. With a sleek design and intuitive navigation, visitors can easily explore and utilize its features. The site offers a comprehensive event management system, allowing users to view upcoming activities, register, and RSVP. An interactive calendar keeps families informed and helps them plan their involvement.",
+    description: "In accordance with an SQA brief, I built a comprehensive website serving Obanshire Club Scouts—a local Scouts branch and their cub members, guardians, and staff. The site's multifaceted purpose covers crucial club info, supporting activity coordination through a helper scheme. Central to its goal is providing general club, Cub Scouts, and badge details, including printing and search features. It's also a resource for guardian helpers, guiding disclosure procedures and registration. Once registered, helpers gain access using dedicated credentials to manage contacts, disclosures, and availability. Event, activity info, training resources, and photo uploads enhance the site. Staff can securely login to manage events and view volunteer information and availability. The project's aim is an informative, interactive, secure platform for effective coordination and engagement.",
     tags: [
       {
         name: "mongodb",
@@ -289,45 +223,14 @@ const projects = [
         icon: sass
       },
     ],
-    image: ocs,
+    images: [ocs6, ocs1, ocs2, ocs3, ocs4, ocs5],
     source_code_link: "https://github.com/",
-  },
-
-  {
-    name: "OTZI",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    tags: [
-      {
-        name: "git",
-        color: "white",
-        icon: git,
-      },
-      {
-        name: "javascript",
-        color: "white",
-        icon: javascript,
-      },
-      
-      {
-        name: "squarespace",
-        color: "white",
-        icon: squarespace,
-      },
-      {
-        name: "css3",
-        color: "white",
-        icon: css,
-      },
-    ],
-    image: otzi,
-    source_code_link: "https://github.com/",
+    view_site: "https://ocs-client.netlify.app/"
   },
 
   {
     name: "Clydeside Children's Hospital Portal",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    description: " For my first MERN project, I developed an interactive prototype targeting child patients aged 7 to 12. The focus was on usability, education, and engagement. The application ensures cross-device functionality, incorporating user registration and login. It provides patient profiles, offering appointment and medication details. Featuring animations, graphics, games, videos, and a children's wing map, the app engages users with both entertainment and informative content. Admin privileges encompass patient data management and a bulletin board. It was a substantial learning curve with potential for enhancements, and served as a solid foundation for future endeavours.",
     tags: [
       {
         name: "mongodb",
@@ -355,9 +258,9 @@ const projects = [
         icon: sass
       }
     ],
-    image: hospital,
+    images: [hospital, theatre, ltclogin],
     source_code_link: "https://github.com/",
   }
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, projects };

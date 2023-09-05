@@ -62,20 +62,19 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img src={logo} alt="logo" className="w-9 h-9 object-contain" /> */}
           <p className="text-white text-[18px] font-semibold cursor-pointer flex ">
             BOBBIE BURNETT&nbsp;
             <span className="sm:block hidden">&nbsp; <i className="portfolio">p o r t f o l i o</i></span>
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 navList">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.id ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.id ? "text-white" : "text-[#cecececf]"
+              } hover:text-white text-[18px] cursor-pointer`}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
@@ -99,7 +98,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={` font-medium cursor-pointer text-[16px] ${
+                  className={`  cursor-pointer text-[16px] ${
                     active === nav.id ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {

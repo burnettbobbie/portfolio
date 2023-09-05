@@ -20,8 +20,6 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "donut-pattern": "url('/src/assets/bg-testing.png')",
-        "one-donut": "url('/src/assets/bg-testing-one.png)",
         "paper-pattern": "url('/src/assets/paper-bg.jpg')",
       },
     },
