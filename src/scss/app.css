@@ -1,0 +1,10 @@
+.my-tech {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+.my-tech p {
+  margin: 10px;
+}/*# sourceMappingURL=app.css.map */
