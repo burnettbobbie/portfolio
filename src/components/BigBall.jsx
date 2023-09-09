@@ -5,7 +5,7 @@ import { useLoader } from '@react-three/fiber';
 import { gsap } from 'gsap';
 
 const SpinningModel = ({ initialPosition }) => {
-  const gltf = useLoader(GLTFLoader, '/ball1.glb'); // Make sure the path is correct
+  const gltf = useLoader(GLTFLoader, '/ball1.glb'); 
   const modelRef = useRef();
 
   useEffect(() => {

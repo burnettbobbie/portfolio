@@ -1,3 +1,6 @@
+import { fadeIn } from "../utils/motion";
+
+
 import {
   javascript,
   html,
@@ -29,9 +32,34 @@ import {
   ocs5,
   ocs6,
   hospital,
+  hosp1,
+  hosp2,
+  hosp3,
+  hosp4,
+  hosp5,
+  hosp6,
+  hosp7,
   theatre,
   ltclogin,
-  ltcregister
+  ltcregister,
+  ltcadmin,
+  ltcusers,
+  ltcblogman,
+  ltcblogex,
+  skillsjs,
+  skillscss,
+  skillshtml,
+  skillsreact,
+  skillstailwind,
+  skillsexpress,
+  skillsmongo,
+  skillsnode,
+  skillsSQL,
+  skillsPHP,
+  skillsgit,
+  skillsfigma,
+  skillsthree
+
 } from "../assets";
 
 export const navLinks = [
@@ -155,7 +183,7 @@ const projects = [
       },
     ],
     images: [otzi2, otzi1, otzi,otzi3, otzi4,otzi5, otzi6],
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/burnettbobbie/otzi",
     view_site: "https://otzi.ltd/"
   },
   {
@@ -189,8 +217,8 @@ const projects = [
         icon: tailwind
       }
     ],
-    images:[ theatre, ltclogin, ltcregister],
-    source_code_link: "#",
+    images:[ theatre, ltclogin, ltcregister, ltcadmin, ltcusers, ltcblogman, ltcblogex],
+    source_code_link: "https://github.com/burnettbobbie/theatre-project",
     view_site: "https://rburnett.student-hosting.college/TheLocalTheatreCompany/"
   },
   {
@@ -224,7 +252,7 @@ const projects = [
       },
     ],
     images: [ocs6, ocs1, ocs2, ocs3, ocs4, ocs5],
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/burnettbobbie/ObanshireCubScouts",
     view_site: "https://ocs-client.netlify.app/"
   },
 
@@ -258,9 +286,92 @@ const projects = [
         icon: sass
       }
     ],
-    images: [hospital, theatre, ltclogin],
-    source_code_link: "https://github.com/",
+    images: [hospital, hosp1, hosp2, hosp4, hosp5, hosp6, hosp7],
+    source_code_link: "https://github.com/burnettbobbie/hospital-full",
+    view_site: 'https://clydeside-childrens-hospital-portal.netlify.app/'
+  }
+];
+const skills = [
+  {
+    skillImage: skillshtml,
+    skillAlt: "HTML icon",
+    skillDescription: "HTML5",
+    variants: fadeIn("right", "spring", 0.1),
+
+  },
+  {
+    skillImage: skillscss,
+    skillAlt: "CSS icon",
+    skillDescription: "CSS3",
+    variants: fadeIn("right", "spring", 0.2),
+  },
+  {
+    skillImage: skillsjs,
+    skillAlt: "JavaScript icon",
+    skillDescription: "JavaScript",
+    variants: fadeIn("right", "spring", 0.3),
+  },
+  {
+    skillImage: skillsreact,
+    skillAlt: "React.js icon",
+    skillDescription: "React.js",
+    variants: fadeIn("right", "spring", 0.4),
+  },
+  {
+    skillImage: skillstailwind,
+    skillAlt: "Tailwind CSS icon",
+    skillDescription: "Tailwind CSS",
+    variants: fadeIn("right", "spring", 0.5),    
+  },
+  {
+    skillImage: skillsexpress,
+    skillAlt: "Express.js icon",
+    skillDescription: "Express.js",
+    variants: fadeIn("right", "spring", 0.6),    
+  },
+  {
+    skillImage: skillsnode,
+    skillAlt: "Node.js icon",
+    skillDescription: "Node.js",
+    variants: fadeIn("right", "spring", 0.7),    
+  },
+  {
+    skillImage: skillsmongo,
+    skillAlt: "MongoDB icon",
+    skillDescription: "MongoDB",
+    variants: fadeIn("right", "spring", 0.8),    
+  },
+  {
+    skillImage: skillsSQL,
+    skillAlt: "SQL icon",
+    skillDescription: "SQL",
+    variants: fadeIn("right", "spring", 0.9),    
+  },
+  {
+    skillImage: skillsPHP,
+    skillAlt: "PHP icon",
+    skillDescription: "PHP",
+    variants: fadeIn("right", "spring", 1),    
+  },
+  {
+    skillImage: skillsgit,
+    skillAlt: "Git icon",
+    skillDescription: "Git",
+    variants: fadeIn("right", "spring", 1.1),    
+  },
+  {
+    skillImage: skillsfigma,
+    skillAlt: "Figma icon",
+    skillDescription: "Figma",
+    variants: fadeIn("right", "spring", 1.2),    
+  },
+  {
+    skillImage: skillsthree,
+    skillAlt: "Three.js icon",
+    skillDescription: "Three.js",
+    variants: fadeIn("right", "spring", 1.3),    
   }
 ];
 
-export { services, technologies, projects };
+
+export { services, technologies, projects, skills };

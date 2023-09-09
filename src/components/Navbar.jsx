@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-import { styles } from "../styles";
 import { navLinks } from "../constants";
-import {  menu, close } from "../assets";
+import { menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -48,13 +46,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`p-10 w-[100vw] flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-zinc-900" : "bg-transparent"
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-[] mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -92,14 +88,14 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-[#18181bee] absolute top-12 shadow-blue-900 shadow-[0px_25px_50px_-20px] right-0 my-2 w-[100vw] z-[12] rounded-[0px_0px_60px_60px]`}
           >
-            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+            <ul className="list-none flex justify-center items-center flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`  cursor-pointer text-[16px] ${
-                    active === nav.id ? "text-white" : "text-secondary"
+                    active === nav.id ? "text-yellow-200" : "text-white"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);

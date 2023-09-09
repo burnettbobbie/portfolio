@@ -59,7 +59,7 @@ const Contact = () => {
           "service_c5myajs",
           "template_yzx52gw",
           {
-            form_name: form.name,
+            from_name: form.name,
             to_name: "Bobbie",
             from_email: form.email,
             to_email: "burnettbobbie@mgmail.com",
@@ -89,7 +89,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={`items-center justify-center sm:w-full md:w-full lg:w-[60vw] lg:ml-[15vw] h-full flex xl:flex-row gap-10 overflow-hidden`} >
+    <div className={`items-center justify-center xs:w-[80vw] sm:w-full md:w-full lg:w-[60vw] lg:ml-[15vw] h-full flex xl:flex-row gap-10 overflow-hidden`} >
       <motion.div variants={fadeIn("down", "spring", 0, 1)}
         className="flex-[1]  bg-zinc-900 p-8 rounded-2xl">
         <img src={img} alt="contact"/>

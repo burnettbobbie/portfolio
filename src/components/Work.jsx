@@ -18,8 +18,8 @@ const ProjectCard = ({
   view_site
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className="bg-[rgba(1,1,1,0.9)] min-h-[800px] flex-wrap p-5 rounded-2xl w-[87vw] md:w-[80vw] lg:w-[44vw]">
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.5)}>
+      <div className="bg-[rgba(1,1,1,0.9)] min-h-[800px] flex-wrap p-5 rounded-2xl w-[87vw] xxs:w-[85vw]  md:w-[80vw] lg:w-[44vw]">
       <div className="relative w-full">
           <Carousel showThumbs={false} showStatus={false}>
             {images.map((image, idx) => (
@@ -34,7 +34,7 @@ const ProjectCard = ({
           </Carousel>
         </div>
         <div className="w-full flex flex-row mt-1 justify-between ">
-          <div className="md:bg-gradient-to-t md:from-zinc-950 md:to-slate-300  text-blue-200 md:text-white  md:shadow-[8px_8px_30px_black] hover:shadow-none cursor-pointer rounded-full m-3 w-40 h-10 flex items-center justify-center" onClick={() => window.open(view_site, "_blank")}>View Site
+          <div className="md:bg-gradient-to-t md:from-zinc-950 md:to-slate-300  text-yellow-100 md:text-white  md:shadow-[8px_8px_30px_black] hover:shadow-none cursor-pointer rounded-full m-3 w-40 h-10 flex items-center justify-center" onClick={() => window.open(view_site, "_blank")}>View Site
           </div>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
@@ -52,7 +52,7 @@ const ProjectCard = ({
           </div>
         <div className="mt-3">
           <h3 className="text-white font-bold text-[20px]">{name}</h3>
-          <p className="mt-2 min-h-[275px] text-secondary text-[16px]">{description}</p>
+          <p className="mt-2 min-h-[275px] text-white text-[16px]">{description}</p>
         </div>
         <div className="mt-2 flex items-center justify-center gap-4">
           {tags.map((tag) => (
@@ -69,7 +69,7 @@ const ProjectCard = ({
 const Work = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div  variants={textVariant()}>
         <img src={img} alt="projects"/>
       </motion.div>
       <div className="w-full flex">
@@ -77,12 +77,12 @@ const Work = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-black text-[17px] max-w-full leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. To view user/admin pages on the websites, please <a href="#contact" className="text-blue-500"><i>contact me</i></a> for login credentials. You may also register as a new user if preferred.
+          The following projects serve as tangible demonstrations of my skills and practical experience. Before implementation, wireframes and designs for all projects were created using both Figma and Adobe software whilst 
+           Git was used for version control during development. To view user/admin pages on the websites, please <a href="#contact" className="text-blue-500"><i>contact me</i></a> for login credentials. You may also register as a new user if preferred.
         </motion.p>
       </div>
 
-      <div className="mt-10 flex flex-wrap gap-7">
+      <div className="mt-10 flex flex-wrap gap-7 overflow-y-hidden">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

@@ -72,6 +72,7 @@
 .animation-container {
   position: relative;
   display: inline-block; 
+
 }
 
 /* Lottie animation positioning */
@@ -81,6 +82,7 @@
   transform: translateX(37%) translateY(-40%); 
   width: 300px; 
   height: 300px; 
+  
 }
 
 
@@ -144,9 +146,38 @@
   justify-content: center;
 }
 
-.my-tech >p {
-  font-size: 20px;
-  margin: 10px;
+.skill{
+  margin: 16px;
+  position: relative;
+  cursor:crosshair;
+}
+
+.skill-description {
+  font-size: 18px;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white;
+  text-align: center;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+.lottie-animation {
+  position: absolute;
+  left: 63%;
+  top: -5vh;
+  /* transform: translateX(-90%) translateY(-60%);  */
+  width: 100px; 
+  height: 100px; 
+  transform: scale(1.3);
+  
+}
 }
 
 @media screen and (min-width: 500px) {
@@ -156,6 +187,6 @@
 }
 .my-tech >p {
   font-size: 20px;
-  margin: 18px;
+  margin: 16px;
 }
 }
