@@ -58,7 +58,7 @@ import {
   skillsPHP,
   skillsgit,
   skillsfigma,
-  skillsthree
+  skillsnpm
 
 } from "../assets";
 
@@ -251,7 +251,7 @@ const projects = [
         icon: sass
       },
     ],
-    images: [ocs6, ocs1, ocs2, ocs3, ocs4, ocs5],
+    images: [ocs6, ocs1, ocs3, ocs4, ocs5],
     source_code_link: "https://github.com/burnettbobbie/ObanshireCubScouts",
     view_site: "https://ocs-client.netlify.app/"
   },
@@ -298,7 +298,7 @@ const skills = [
     skillDescription: "HTML5",
     variants: fadeIn("right", "spring", 0.1),
     detailedDescription:
-      "Proficient in creating semantic HTML structures for websites and web applications.",
+      "I've employed HTML5 to craft well-structured web content, optimizing it for accessibility, search engines, and mobile devices. Additionally, I've explored its capabilities in creating responsive web components and semantic layouts.",
 
   },
   {
@@ -306,72 +306,84 @@ const skills = [
     skillAlt: "CSS icon",
     skillDescription: "CSS3",
     variants: fadeIn("right", "spring", 0.2),
+    detailedDescription:"Beyond styling, I've mastered advanced CSS techniques such as custom properties and animations to maintain consistent design themes across websites. I've also employed CSS preprocessors like Sass to streamline my stylesheets and boost development efficiency.",
   },
   {
     skillImage: skillsjs,
     skillAlt: "JavaScript icon",
     skillDescription: "JavaScript",
     variants: fadeIn("right", "spring", 0.3),
+    detailedDescription:"JavaScript has been a cornerstone for me when it comes to developing interactive web applications. I've implemented advanced features like asynchronous programming, custom event handling, and dynamic content loading, enhancing user engagement and site performance.",
   },
   {
     skillImage: skillsreact,
     skillAlt: "React.js icon",
     skillDescription: "React.js",
     variants: fadeIn("right", "spring", 0.4),
+    detailedDescription:"React.js has streamlined my development workflow through component-based architecture, using hooks to build more complex UIs effectively. I'm currently learning how to incorporate state management with Redux to further the efficiency of my builds.",
   },
   {
     skillImage: skillstailwind,
     skillAlt: "Tailwind CSS icon",
     skillDescription: "Tailwind CSS",
-    variants: fadeIn("right", "spring", 0.5),    
+    variants: fadeIn("right", "spring", 0.5),  
+    detailedDescription:"Tailwind CSS has been instrumental in achieving rapid prototyping and maintaining design consistency. I've customized utility classes, applied JIT compilation for faster builds, and created a custom Tailwind configuration for project-specific needs.",  
   },
   {
     skillImage: skillsexpress,
     skillAlt: "Express.js icon",
     skillDescription: "Express.js",
     variants: fadeIn("right", "spring", 0.6),    
+    detailedDescription:"In addition to basic routing, I've implemented middleware for authentication, data validation, and error handling in Express.js. I've also built RESTful APIs, integrating them with databases and third-party services.",
   },
   {
     skillImage: skillsnode,
     skillAlt: "Node.js icon",
     skillDescription: "Node.js",
     variants: fadeIn("right", "spring", 0.7),    
+    detailedDescription:"I've leveraged Node.js as a key component of the MERN stack. Its event-driven architecture has been instrumental in creating real-time features, facilitating efficient server-side scripting, and enabling smooth communication between the front end and back end.",
   },
   {
     skillImage: skillsmongo,
     skillAlt: "MongoDB icon",
     skillDescription: "MongoDB",
-    variants: fadeIn("right", "spring", 0.8),    
+    variants: fadeIn("right", "spring", 0.8), 
+    detailedDescription:"MongoDB has served as a versatile NoSQL database for me. I've employed its document-oriented structure to design efficient data models that accommodate complex data relationships. In addition to standard use cases, I've utilized MongoDB's robust querying capabilities for advanced data retrieval. I particularly enjoy the flexibility it affords.",   
   },
   {
     skillImage: skillsSQL,
     skillAlt: "SQL icon",
     skillDescription: "SQL",
     variants: fadeIn("right", "spring", 0.9),    
+    detailedDescription:"Beyond basic queries, I've employed SQL to design normalized database schemas, optimize queries for large datasets, and implement stored procedures and triggers for enhanced data management.",
   },
   {
     skillImage: skillsPHP,
     skillAlt: "PHP icon",
     skillDescription: "PHP",
     variants: fadeIn("right", "spring", 1),    
+    detailedDescription:"PHP has enabled me to create dynamic websites with user authentication systems and RESTful API endpoints. I've also integrated it with various databases for data-driven applications.",
   },
   {
     skillImage: skillsgit,
     skillAlt: "Git icon",
     skillDescription: "Git",
-    variants: fadeIn("right", "spring", 1.1),    
+    variants: fadeIn("right", "spring", 1.1),   
+    detailedDescription:"Git has been my tool of choice for version control, but I've also explored its advanced features like rebasing, interactive staging, and creating custom Git hooks for automating tasks.", 
   },
   {
     skillImage: skillsfigma,
     skillAlt: "Figma icon",
     skillDescription: "Figma",
-    variants: fadeIn("right", "spring", 1.2),    
+    variants: fadeIn("right", "spring", 1.2),   
+    detailedDescription:"Not only have I found Figma to be an excellent design tool but also a collaborative platform for user testing, design handoff, and interactive prototyping, improving the entire design-to-development workflow.", 
   },
   {
-    skillImage: skillsthree,
-    skillAlt: "Three.js icon",
-    skillDescription: "Three.js",
+    skillImage: skillsnpm,
+    skillAlt: "npm icon",
+    skillDescription: "npm",
     variants: fadeIn("right", "spring", 1.3),    
+    detailedDescription:"Npm has been a crucial tool in my projects, simplifying package management, aiding version control and facilitating the integration of external libraries. Whilst I haven't contributed to open source projects yet, I continue to leverage npm's capabilities to enhance project efficiency and deliver innovative solutions.",
   }
 ];
 

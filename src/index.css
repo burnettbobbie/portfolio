@@ -81,10 +81,8 @@
   /* left: 37%; */
   transform: translateX(37%) translateY(-40%); 
   width: 300px; 
-  height: 300px; 
-  
+  height: 300px;   
 }
-
 
 .white{
   color: white;
@@ -178,7 +176,7 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  box-shadow: inset 0px 10px 12px 6px rgb(0, 0, 0);
+  box-shadow: inset 0px 10px 6px 1px rgb(0, 0, 0);
 }
 
 .skills-desc {
@@ -186,30 +184,30 @@
   -moz-transform: translateX(120%);
   -webkit-transform: translateX(120%);
   transform: translateX(120%);
-  -moz-animation: my-animation 25s linear infinite;
-  -webkit-animation: my-animation 25s linear infinite;
-  animation: my-animation 25s linear infinite;
+  -moz-animation: my-animation 25s linear 0.1s;
+  -webkit-animation: my-animation 25s linear 0.1s ;
+  animation: my-animation 25s linear 0.1s;
   white-space: nowrap;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(105%); }
+  from { -moz-transform: translateX(100%); }
   to { -moz-transform: translateX(-200%); }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(105%); }
+  from { -webkit-transform: translateX(100%); }
   to { -webkit-transform: translateX(-200%); }
 }
 
 @keyframes my-animation {
   from {
-    -moz-transform: translateX(105%);
-    -webkit-transform: translateX(105%);
-    transform: translateX(105%);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
   }
   to {
     -moz-transform: translateX(-200%);

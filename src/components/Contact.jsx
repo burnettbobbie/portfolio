@@ -89,14 +89,14 @@ const Contact = () => {
   };
 
   return (
-    <div className={`items-center justify-center xs:w-[80vw] sm:w-full md:w-full lg:w-[60vw] lg:ml-[15vw] h-full flex xl:flex-row gap-10 overflow-hidden`} >
+    <div className={`items-center justify-center w-full h-full flex xl:flex-row gap-10 overflow-hidden`} >
       <motion.div variants={fadeIn("down", "spring", 0, 1)}
-        className="flex-[1]  bg-zinc-900 p-8 rounded-2xl">
+        className=" bg-zinc-900 p-8 rounded-2xl">
         <img src={img} alt="contact"/>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-2 w-[full] flex flex-col gap-2"
+          className="mt-2 w-[70vw] flex flex-col gap-2"
         >
           <label className="flex flex-col">
             <span className="text-white mb-2">Name</span>

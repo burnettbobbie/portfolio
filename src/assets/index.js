@@ -57,7 +57,7 @@ import skillsSQL from '../assets/skills-SQL.png';
 import skillsPHP from '../assets/skills-PHP.png';
 import skillsgit from '../assets/skills-git.png';
 import skillsfigma from '../assets/skills-figma.png';
-import skillsthree from '../assets/skills-three.png';
+import skillsnpm from '../assets/skills-npm.png';
 
 export {
   github,
@@ -119,5 +119,5 @@ export {
   skillsmongo,
   skillsnode,
   skillstailwind,
-  skillsthree
+  skillsnpm
 };

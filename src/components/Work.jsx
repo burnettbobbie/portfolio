@@ -19,49 +19,49 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.5)} >
-      <div className="bg-[rgba(1,1,1,0.9)] min-h-[900px] flex flex-wrap w-full p-5 rounded-2xl md:w-[70vw] lg:w-[40vw] xl:w-[44vw]">
-      <div className="relative w-full">
-          <Carousel showThumbs={false} showStatus={false}>
-            {images.map((image, idx) => (
-              <div key={`carousel-image-${idx}`}>
+      <div className="bg-[rgba(1,1,1,0.9)] min-h-[900px] flex flex-wrap w-[85vw] p-5 rounded-2xl md:w-[70vw] lg:w-[40vw] xl:w-[44vw]">
+        <div className="relative w-full">
+            <Carousel showThumbs={false} showStatus={false}>
+              {images.map((image, idx) => (
+                <div key={`carousel-image-${idx}`}>
+                  <img
+                    src={image}
+                    alt={`${name} - Image ${idx + 1}`}
+                    className="w-full h-[300px] object-cover z-5"
+                  />
+                </div>
+              ))}
+            </Carousel>
+        </div>
+        <div className="w-full flex flex-row mt-1 justify-between scale-75 xs:scale-100">
+            <div className="md:bg-gradient-to-t md:from-zinc-950 md:to-slate-300  text-yellow-100 md:text-white  md:shadow-[8px_8px_30px_black] hover:shadow-none cursor-pointer rounded-full m-3 w-40 h-10 flex items-center justify-center" onClick={() => window.open(view_site, "_blank")}>View Site
+            </div>
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className=" m-3 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <div className=" bg-white border-[2px] border-yellow-300  shadow-[inset_4px_4px_5px_black] hover:shadow-[inset_6px_6px_8px_black] rounded-full m-1 w-40 h-10 flex items-center justify-center"> source code
+
+                </div>
                 <img
-                  src={image}
-                  alt={`${name} - Image ${idx + 1}`}
-                  className="w-full h-[300px] object-cover z-5"
+                  src={github}
+                  alt="github"
+                  className="w-10 h-10 object-contain"
                 />
               </div>
-            ))}
-          </Carousel>
         </div>
-        <div className="w-full flex flex-row mt-1 justify-between ">
-          <div className="md:bg-gradient-to-t md:from-zinc-950 md:to-slate-300  text-yellow-100 md:text-white  md:shadow-[8px_8px_30px_black] hover:shadow-none cursor-pointer rounded-full m-3 w-40 h-10 flex items-center justify-center" onClick={() => window.open(view_site, "_blank")}>View Site
-          </div>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className=" m-3 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-               <div className=" bg-white border-[2px] border-yellow-300  shadow-[inset_4px_4px_5px_black] hover:shadow-[inset_6px_6px_8px_black] rounded-full m-1 w-40 h-10 flex items-center justify-center"> source code
-
-              </div>
-              <img
-                src={github}
-                alt="github"
-                className="w-10 h-10 object-contain"
-              />
-            </div>
-          </div>
         <div className="mt-3">
           <h3 className="text-white font-bold text-[20px]">{name}</h3>
           <p className="mt-2 min-h-[275px] text-white text-[16px]">{description}</p>
         </div>
-        <div className="mt-2 flex items-center justify-center gap-4">
+        <div className="mt-2 flex items-center flex-wrap w-full justify-items-center justify-center gap-4">
           {tags.map((tag) => (
-            <div className={`flex items-center justify-center flex-col flex-wrap text-[12px] ${tag.color}`} key={tag.name}>#{tag.name}
-              <img src={tag.icon} className="w-[30px] h-[30px]"/>
+            <div className={`flex justify-items-center items-center justify-center flex-col flex-wrap text-[12px] ${tag.color}`} key={tag.name}>#{tag.name}
+              <img src={tag.icon} className="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px]"/>
             </div>
           ))}
         </div>
-        </div>
+      </div>
     </motion.div>
   );
 };
@@ -77,8 +77,8 @@ const Work = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-black text-[17px] max-w-full leading-[30px]"
         >
-          The following projects serve as tangible demonstrations of my skills and practical experience. Before implementation, wireframes and designs for all projects were created using both Figma and Adobe software whilst 
-           Git was used for version control during development. To view user/admin pages on the websites, please <a href="#contact" className="text-blue-500"><i>contact me</i></a> for login credentials. You may also register as a new user if preferred.
+          The following projects serve as tangible demonstrations of my skills and practical experience. Prior to implementation, wireframes and designs for all projects were created using both Figma and Adobe software whilst 
+           Git was used for version control during development. To view specific user/admin pages on the websites, please <a href="#contact" className="text-blue-500"><i>contact me</i></a> for login credentials. You may also register as a new user if preferred.
         </motion.p>
       </div>
 

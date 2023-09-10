@@ -16,7 +16,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 ">
-        <div className="bg-paper-pattern bg-cover ">
+        <div className="bg-[#18181bd1] bg-cover ">
             <Navbar />
             <div className="absolute z-0 h-[207.5vh] w-full">
               <Bigball className="hidden lg:block"/>
@@ -24,8 +24,8 @@ const App = () => {
             <Landing />
             <Skills />
         </div>
-        <Work/>
         <StarsCanvas />
+        <Work/>
         <div className="relative z-0">
           <Contact/>
         </div>
