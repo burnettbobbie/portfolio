@@ -18,8 +18,8 @@ const ProjectCard = ({
   view_site
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.5)}>
-      <div className="bg-[rgba(1,1,1,0.9)] min-h-[800px] flex-wrap p-5 rounded-2xl w-[87vw] xxs:w-[85vw]  md:w-[80vw] lg:w-[44vw]">
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.5)} >
+      <div className="bg-[rgba(1,1,1,0.9)] min-h-[900px] flex flex-wrap w-full p-5 rounded-2xl md:w-[70vw] lg:w-[40vw] xl:w-[44vw]">
       <div className="relative w-full">
           <Carousel showThumbs={false} showStatus={false}>
             {images.map((image, idx) => (
@@ -82,7 +82,7 @@ const Work = () => {
         </motion.p>
       </div>
 
-      <div className="mt-10 flex flex-wrap gap-7 overflow-y-hidden">
+      <div className="mt-10 flex flex-wrap gap-5 items-center justify-center overflow-y-hidden">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

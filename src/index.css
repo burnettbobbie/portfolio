@@ -165,6 +165,59 @@
   border-radius: 20px;
 }
 
+.detailed-description {
+  color:rgb(255, 255, 255);
+  background: linear-gradient(15deg,rgb(0, 0, 0) 0%,rgba(0, 0, 0) 10%,rgb(20, 19, 27)25%, rgb(20, 17, 27)40%, rgb(0, 0, 0) 100%);
+  border: #141c1c 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 100vw;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: inset 0px 10px 12px 6px rgb(0, 0, 0);
+}
+
+.skills-desc {
+  font-family:monospace;
+  -moz-transform: translateX(120%);
+  -webkit-transform: translateX(120%);
+  transform: translateX(120%);
+  -moz-animation: my-animation 25s linear infinite;
+  -webkit-animation: my-animation 25s linear infinite;
+  animation: my-animation 25s linear infinite;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(105%); }
+  to { -moz-transform: translateX(-200%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(105%); }
+  to { -webkit-transform: translateX(-200%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(105%);
+    -webkit-transform: translateX(105%);
+    transform: translateX(105%);
+  }
+  to {
+    -moz-transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+
+}
 
 @media screen and (max-width: 400px) {
 

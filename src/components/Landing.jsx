@@ -19,8 +19,8 @@ const Landing = () => {
             <img src={img} alt="bobbie-logo" className="inline-block" />
           </div>
           <div  className="flex flex-row">
-          <p className=" mt-[6vh] tracking-wide text-center text-lg mx-[10vw]  md:text-[28px] leading-[40px] font-['Capriola']">
-            As a recent web engineering graduate, 
+          <p className=" mt-[6vh] tracking-wide text-justify text-lg mx-[10vw]  md:text-[26px] leading-[40px] ">
+            &nbsp;&nbsp;&nbsp; As a recent web engineering graduate, 
             I bring a passion for crafting unique and functional websites and applications.
             My expertise lies in developing clean and user-friendly interfaces, where attention to detail and design aesthetics play a pivotal role in delivering exceptional user experiences. I pride myself on combining technical proficiency with a keen eye for design to create web solutions that not only work seamlessly but also leave a lasting visual impact.
           </p>

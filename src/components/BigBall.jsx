@@ -14,13 +14,13 @@ const SpinningModel = ({ initialPosition }) => {
     const animationTimeline = gsap.timeline({ repeat: -1, yoyo: true });
 
     animationTimeline.to(modelRef.current.position, {
-      duration: 2,
+      duration: 6,
       x: '+=6',
       y: '+=-0.8',
       ease: 'power1.inOut',
     });
     animationTimeline.to(modelRef.current.position, {
-      duration: 2,
+      duration: 6,
       x: '-=6',
       y: '-=0.8',
       ease: 'power1.inOut',

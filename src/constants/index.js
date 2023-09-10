@@ -65,7 +65,7 @@ import {
 export const navLinks = [
   {
     id: "skills",
-    title: "SKILLS",
+    title: "SKiLLS",
   },
   {
     id: "work",
@@ -218,7 +218,7 @@ const projects = [
       }
     ],
     images:[ theatre, ltclogin, ltcregister, ltcadmin, ltcusers, ltcblogman, ltcblogex],
-    source_code_link: "https://github.com/burnettbobbie/theatre-project",
+    source_code_link: "https://github.com/burnettbobbie/theatre-blog-prototype",
     view_site: "https://rburnett.student-hosting.college/TheLocalTheatreCompany/"
   },
   {
@@ -287,7 +287,7 @@ const projects = [
       }
     ],
     images: [hospital, hosp1, hosp2, hosp4, hosp5, hosp6, hosp7],
-    source_code_link: "https://github.com/burnettbobbie/hospital-full",
+    source_code_link: "https://github.com/burnettbobbie/childrens-hospital-portal",
     view_site: 'https://clydeside-childrens-hospital-portal.netlify.app/'
   }
 ];
@@ -297,6 +297,8 @@ const skills = [
     skillAlt: "HTML icon",
     skillDescription: "HTML5",
     variants: fadeIn("right", "spring", 0.1),
+    detailedDescription:
+      "Proficient in creating semantic HTML structures for websites and web applications.",
 
   },
   {

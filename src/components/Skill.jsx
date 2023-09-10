@@ -1,15 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
-const Skill = ({ skillImage, skillAlt, skillDescription, variants }) => {
-  const [isHovered, setIsHovered] = useState(false);
+const Skill = ({ skillImage, skillAlt, skillDescription, variants, detailedDescription, isHovered, onMouseEnter, onMouseLeave }) => {
 
   const handleSkillHover = () => {
-    setIsHovered(true);
+    onMouseEnter(); 
   };
 
   const handleSkillLeave = () => {
-    setIsHovered(false);
+    onMouseLeave(); 
   };
 
   return (
@@ -18,10 +17,10 @@ const Skill = ({ skillImage, skillAlt, skillDescription, variants }) => {
       onMouseEnter={handleSkillHover}
       onMouseLeave={handleSkillLeave}
       variants={variants}
-      
+      detailedDescription={detailedDescription}
     >
       <img src={skillImage} alt={skillAlt} variant={variants} style={{ opacity: isHovered ? 0 : 1 }}/>
-      {isHovered && <p className="skill-description " >{skillDescription}</p>}
+      {isHovered && <p className="skill-description">{skillDescription}</p>}
     </motion.div>
   );
 };

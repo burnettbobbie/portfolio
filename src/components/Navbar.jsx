@@ -58,8 +58,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className="text-white text-[18px] font-semibold cursor-pointer flex ">
-            BOBBIE BURNETT&nbsp;
+          <p className="text-white text-[16px] font-medium tracking-[1px] cursor-pointer font-['Capriola'] flex ">
+            BOBBiE BURNETT&nbsp;
             <span className="sm:block hidden">&nbsp; <i className="portfolio">p o r t f o l i o</i></span>
           </p>
         </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.id ? "text-white" : "text-[#cecececf]"
-              } hover:text-white text-[18px] cursor-pointer`}
+              } hover:text-white text-[16px] cursor-pointer`}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
