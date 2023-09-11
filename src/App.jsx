@@ -1,7 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 
-
-
 import {
   Skills,
   Contact,
