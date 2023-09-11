@@ -17,6 +17,9 @@ import {
   sass,
   php,
   sql,
+  xampp,
+  axios,
+  phpma,
   otzi,
   otzi1,
   otzi2,
@@ -236,7 +239,12 @@ const projects = [
         name: "tailwind",
         color: "white",
         icon: tailwind
-      }
+      },
+      {
+        name: "XAMPP",
+        color: "white",
+        icon: xampp
+      },
     ],
     images:[ theatre, ltclogin, ltcregister, ltcadmin, ltcusers, ltcblogman, ltcblogex],
     source_code_link: "https://github.com/burnettbobbie/theatre-blog-prototype",
@@ -256,6 +264,11 @@ const projects = [
         "Utilize Redux to manage states"
     ],
     tags: [
+      {
+        name: "SCSS",
+        color: "white",
+        icon: sass
+      },
       {
         name: "mongodb",
         color: "white",
@@ -277,9 +290,9 @@ const projects = [
         icon: nodejs
       },
       {
-        name: "SCSS",
+        name: "axios",
         color: "white",
-        icon: sass
+        icon: axios
       },
     ],
     images: [ocs6, ocs1, ocs3, ocs4, ocs5],
@@ -325,7 +338,12 @@ const projects = [
         name: "SCSS",
         color: "white",
         icon: sass
-      }
+      },
+      {
+        name: "axios",
+        color: "white",
+        icon: axios
+      },
     ],
     images: [hospital, hosp1, hosp2, hosp4, hosp5, hosp6, hosp7],
     source_code_link: "https://github.com/burnettbobbie/childrens-hospital-portal",

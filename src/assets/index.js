@@ -16,6 +16,9 @@ import express from "./express-logo.png";
 import sass from "./sass-logo.png";
 import php from "./php-logo.png";
 import sql from "./SQL.png";
+import xampp from "./xampp-logo.png";
+import axios from "./axios-logo.png";
+import phpma from "./phpMyAdmin-logo.png";
 import otzi from './OTZI.png';
 import ocs from './OCS.png';
 import hospital from './hospital.png';
@@ -59,6 +62,7 @@ import skillsgit from '../assets/skills-git.png';
 import skillsfigma from '../assets/skills-figma.png';
 import skillsnpm from '../assets/skills-npm.png';
 
+
 export {
   github,
   menu,
@@ -78,6 +82,9 @@ export {
   sass,
   php,
   sql,
+  xampp,
+  axios,
+  phpma,
   ocs,
   ocs1,
   ocs2,

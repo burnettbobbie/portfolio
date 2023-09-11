@@ -51,7 +51,7 @@ const Skills = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-2 text-white text-[20px] font-extralight max-w-5xl mx-[10px] leading-[30px]"
       >
-       Proficient in both front-end and back-end development, I have practical experience building interactive and responsive websites and applications. My keen eye for aesthetics and attention to detail translate into clean and visually appealing user interfaces. With a robust grasp of the entire web development stack, I implement clean code practices to ensure the maintainability and efficiency of my projects. I excel in problem-solving, adapting to new technologies and trends, and effectively communicating within team environments. My passion lies in leveraging these skills to craft user-centric web solutions that stand out in today's digital landscape.
+       Proficient in both front and back-end development, I have practical experience building dynamic and responsive websites and applications. My design sensibility and attention to detail translate into clean and visually appealing user interfaces. With a robust grasp of the entire web development stack, I implement clean code practices to ensure the maintainability and efficiency of my projects. I excel in problem-solving, adapting to new technologies and trends, and effectively communicating within team environments. My passion lies in leveraging these skills to craft user-centric web solutions that stand out in today's digital landscape.
       </motion.p>
 
       <motion.div  variants={fadeIn("left", "spring", 0)} className="services mt-0 mb-10 flex flex-wrap items-center justify-evenly ">
