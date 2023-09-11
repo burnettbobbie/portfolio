@@ -30,7 +30,7 @@ import hosp5 from './hosp5.png';
 import hosp6 from './hosp6.png';
 import hosp7 from './hosp7.png';
 import theatre from './theatre.png';
-import ltclogin from './ltc-login.png';
+import ltclogin from './LTC-login.png';
 import ltcregister from './ltc-register.png';
 import ltcadmin from './ltc-admindash.png';
 import ltcusers from './ltc-usermanager.png';
