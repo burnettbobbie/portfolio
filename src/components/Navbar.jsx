@@ -69,7 +69,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.id ? "text-white" : "text-[#cecececf]"
+                active === nav.id ? "text-white" : "text-[#c4c4c4]"
               } hover:text-white text-[16px] cursor-pointer`}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -88,7 +88,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-[#18181bee] absolute top-12 shadow-blue-900 shadow-[0px_25px_50px_-20px] right-0 my-2 w-[100vw] z-[12] rounded-[0px_0px_60px_60px]`}
+            } p-6 bg-[#18181bee] absolute top-12 shadow-black-900 shadow-[0px_25px_50px_-20px] right-0 my-2 w-[100vw] z-[12] rounded-[0px_0px_60px_60px]`}
           >
             <ul className="list-none flex justify-center items-center flex-1 flex-col gap-4">
               {navLinks.map((nav) => (

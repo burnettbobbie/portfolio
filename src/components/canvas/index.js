@@ -1,5 +1,6 @@
-import StarsCanvas from "./Stars";
+import SpotsCanvas from "./Spots";
+import Bigball from "./BigBall";
 
 
 
-export {StarsCanvas};
+export {SpotsCanvas, Bigball};

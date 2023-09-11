@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import Bigball from "./components/BigBall";
+
 
 
 import {
@@ -8,15 +8,16 @@ import {
   Landing,
   Navbar,
   Work,
-  StarsCanvas
+  SpotsCanvas,
+  Bigball
 } from "./components";
 
 const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="relative z-0 ">
-        <div className="bg-[#18181bd1] bg-cover ">
+      <div className="relative z-0 site-container">
+        <div className="bg-cover folio-bg" >
             <Navbar />
             <div className="absolute z-0 h-[207.5vh] w-full">
               <Bigball className="hidden lg:block"/>
@@ -24,7 +25,7 @@ const App = () => {
             <Landing />
             <Skills />
         </div>
-        <StarsCanvas />
+        <SpotsCanvas />
         <Work/>
         <div className="relative z-0">
           <Contact/>

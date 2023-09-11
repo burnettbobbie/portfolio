@@ -3,14 +3,14 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
-const Stars = () => {
+const Spots = () => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(300), { radius: 0.8 }));
+  const [sphere] = useState(() => random.inSphere(new Float32Array(500), { radius: 0.8 }));
 
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 30;
-    ref.current.rotation.y -= delta / 25;
+    ref.current.rotation.y -= delta / 15;
   });
 
   return (
@@ -30,12 +30,12 @@ const Stars = () => {
   );
 };
 
-const StarsCanvas = () => {
+const SpotsCanvas = () => {
   return (
     <div className='w-full h-auto mt-[-50vh] absolute inset-0 z-[-1]'>
       <Canvas camera={{ position: [1, 0, 1] }} antialias pixelRatio={window.devicePixelRatio}>
         <Suspense fallback={null}>
-          <Stars />
+          <Spots />
         </Suspense>
         <Preload all />
       </Canvas>
@@ -43,4 +43,4 @@ const StarsCanvas = () => {
   );
 };
 
-export default StarsCanvas;
+export default SpotsCanvas;

@@ -19,7 +19,7 @@ const ServiceCard = ({ title}) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-[rgba(255,255,255,0.5)] border-b-[8px] border-slate-900 drop-shadow-2xl h-[100px] shadow-[inset_8px_8px_30px_white] rounded-[20px] p-[35px] flex justify-evenly items-center flex-col"
+        className="bg-[rgba(255,255,255,0.3)] border-b-[10px] border-slate-600 drop-shadow-2xl h-[100px] shadow-[inset_8px_8px_30px_white] rounded-[20px] p-[35px] flex justify-evenly items-center flex-col"
       >
 
         <h3 className="text-zinc-900 text-[18px] font-extrabold text-center tracking-[4px]">

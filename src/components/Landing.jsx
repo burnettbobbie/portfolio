@@ -8,8 +8,8 @@ import gif from '../assets/bobbie-tv-gif.gif';
 const Landing = () => {
   return (
     <>
-      <section className="flex items-center justify-center max-w-fit h-screen mx-auto relative pt-[80vh] xs:pt-[40vh] sm:pt-[10vh] ">
-      <img src={gif} alt="gif of tv" className="hidden md:block scale-100 lg:scale-105 mt-[-55vh] p-0 shadow-black shadow-[0px_5px_80px_15px] rotate-[-10deg] rounded-[20px] absolute"/>
+      <section className="flex items-center justify-center max-w-fit h-screen mx-auto relative pt-[80vh] xs:pt-[15vh] sm:pt-[10vh]  ">
+      <img src={gif} alt="gif of tv" className="hidden md:block scale-100 lg:scale-105 mt-[-55vh] p-0 shadow-white shadow-[0px_5px_150px_15px] rotate-[-10deg] rounded-[20px] absolute"/>
         <div className="text-white text-center ">
           <div className="animation-container ">
             <Lottie
@@ -18,11 +18,11 @@ const Landing = () => {
             />
             <img src={img} alt="bobbie-logo" className="inline-block" />
           </div>
-          <div  className="flex flex-col mt-[6vh] text-center text-lg mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[10vw] md:text-[26px] font-[capriola] lg:leading-10">
-            <p >Junior Full Stack Developer | AFOL</p>
-            <p className="text-[18px]">Open-minded · Curious · Creative </p>
-          <p className="text-center font-[Chivo]">
-           As a recent web engineering graduate, I am commmitted to honing my newly acquired skills and developing original websites and applications that not only deliver optimal solutions but are fun and leave a lasting visual impact..Multidisciplinary
+          <div  className="flex flex-col mt-[6vh] text-center mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw] font-[capriola] lg:leading-10">
+            <p className="z-10 text-[24px] ">Junior Full Stack Developer | AFOL | HND Web Engineering</p>
+            <p className="text-[16px] z-10 ">Open-minded · Curious · Creative </p>
+          <p className="text-center flex flex-row font-[Chivo] text-[20px] text-md mt-4">
+          Taking a multidisciplinary approach, my objective is to build applications and websites that function effectively, deliver optimal solutions, bring enjoyment, and leave a lasting visual impact &nbsp; ⋆ ｡°✩
             </p>
           </div>
           </div>

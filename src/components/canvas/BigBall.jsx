@@ -14,20 +14,20 @@ const SpinningModel = ({ initialPosition }) => {
     const animationTimeline = gsap.timeline({ repeat: -1, yoyo: true });
 
     animationTimeline.to(modelRef.current.position, {
-      duration: 6,
+      duration: 4,
       x: '+=6',
       y: '+=-0.8',
       ease: 'power1.inOut',
     });
     animationTimeline.to(modelRef.current.position, {
-      duration: 6,
+      duration: 4,
       x: '-=6',
       y: '-=0.8',
       ease: 'power1.inOut',
     });
   }, [initialPosition]);
 
-  return <primitive ref={modelRef} object={gltf.scene} scale={[1, 1, 1]} />;
+  return <primitive ref={modelRef} object={gltf.scene} scale={[0.5, 0.5, 0.5]} />;
 };
 
 
