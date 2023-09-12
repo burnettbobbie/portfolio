@@ -10,9 +10,7 @@ const Landing = () => {
   return (
     <>
       <section className="flex items-center justify-center max-w-fit h-screen mx-auto relative pt-[80vh] xs:pt-[15vh] sm:pt-[10vh]  ">
-      <motion.div       initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -100, opacity: 0 }}  className="rounded-[15px] border-[#767676] border-[7px] hidden md:block scale-100 lg:scale-[1] mt-[-55vh] p-0 shadow-white shadow-[-15px_-15px_150px_10px] rotate-[-10deg] absolute">
+      <motion.div initial={{ y: -150, opacity: 0.5 }} animate={{ y: 0, opacity: 1, duration:1  }} exit={{ y: -150, opacity: 0 }}  className="rounded-[15px] border-[#767676] border-[4px] hidden md:block scale-100 lg:scale-[1] mt-[-55vh] p-0 shadow-white shadow-[-15px_-15px_150px_10px] rotate-[-40deg] absolute">
         <video src={vid} loop autoPlay muted className="rounded-[15px] bg-transparent border-black " alt="bobbie in tv">
         </video>
         </motion.div>
