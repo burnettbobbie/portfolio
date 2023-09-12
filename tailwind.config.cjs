@@ -11,7 +11,8 @@ module.exports = {
       },
       screens: {
         xxs: "280px",
-        xs: "350px"
+        xs: "350px",
+        sm1: "500px"
       },
       backgroundImage: {
         "paper-pattern": "url('/src/assets/paper-bg.jpg')",

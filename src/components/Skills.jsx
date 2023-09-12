@@ -59,7 +59,7 @@ const Skills = () => {
           <ServiceCard  key={service.title} index={index} {...service} />
         ))}
       </motion.div>
-      <motion.div className="detailed-description hidden invisible md:block md:visible">
+      <motion.div className="detailed-description hidden invisible sm1:block sm1:visible">
         {hoveredSkill !== null && (
           <p className="skills-desc">{skills[hoveredSkill].detailedDescription}</p>
         )}
@@ -81,8 +81,6 @@ const Skills = () => {
         ))}
       </motion.div>
       
-      {/* Display detailed description for the hovered skill */}
-
     </>
   );
 };
