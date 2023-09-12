@@ -2,7 +2,7 @@ import React from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/bouncy ball.json";
 import img from '../assets/bobbienodot.png';
-import gif from '../assets/bobbie-tv-gif.gif';
+import gif from '../assets/bobbie-tv-op.gif';
 
 
 const Landing = () => {
