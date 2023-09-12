@@ -200,6 +200,11 @@
   letter-spacing: 0px;
 }
 
+.work-image{
+  height: 300px;
+  width: 600px;
+}
+
 /* for Firefox */
 @-moz-keyframes my-animation {
   from { -moz-transform: translateX(100%); }
@@ -226,6 +231,8 @@
 
 }
 
+
+
 @media screen and (max-width: 400px) {
 
 .lottie-animation {
@@ -250,3 +257,6 @@
   margin: 16px;
 }
 }
+
+/* IMAGES */
+

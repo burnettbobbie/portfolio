@@ -29,8 +29,10 @@ const ProjectCard = ({
                 <div key={`carousel-image-${idx}`}>
                   <img
                     src={image}
+                    height={'300px'}
+                    width={'600px'}
                     alt={`${name} - Image ${idx + 1}`}
-                    className="w-full h-[300px] object-cover z-5"
+                    className="work-image z-5"
                   />
                 </div>
               ))}
