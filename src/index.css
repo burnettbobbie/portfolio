@@ -200,10 +200,10 @@
   letter-spacing: 0px;
 }
 
-.work-image{
+/* .work-image{
   height: 300px;
-  width: 600px;
-}
+  width: 100px;
+} */
 
 /* for Firefox */
 @-moz-keyframes my-animation {
