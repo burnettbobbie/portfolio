@@ -33,7 +33,7 @@ const Spots = () => {
 const SpotsCanvas = () => {
   return (
     <div className='w-full h-auto mt-[-50vh] absolute inset-0 z-[-1]'>
-      <Canvas camera={{ position: [1, 0, 1] }} antialias pixelRatio={window.devicePixelRatio}>
+      <Canvas camera={{ position: [1, 0, 1] }} antialias={'true'}>
         <Suspense fallback={null}>
           <Spots />
         </Suspense>
