@@ -18,7 +18,7 @@ const App = () => {
         <div className="bg-cover folio-bg" >
             <Navbar />
             <div className="absolute z-0 h-[207.5vh] w-full">
-              <Bigball className="hidden lg:block"/>
+              {/* <Bigball className="hidden lg:block"/> */}
             </div>
             <Landing />
             <Skills />
