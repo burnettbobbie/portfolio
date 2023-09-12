@@ -162,8 +162,8 @@
 .skill-description {
   font-size: 18px;
   position: absolute;
-  top: 50%; 
-  left: 50%; 
+  top: 60%; 
+  left: 30%; 
   transform: translate(-50%, -50%); 
   color: white;
   text-align: center;
@@ -200,10 +200,6 @@
   letter-spacing: 0px;
 }
 
-/* .work-image{
-  height: 300px;
-  width: 100px;
-} */
 
 /* for Firefox */
 @-moz-keyframes my-animation {

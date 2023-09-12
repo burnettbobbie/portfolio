@@ -20,13 +20,13 @@ const Landing = () => {
               animationData={animationData}
               className="lottie-animation "
             />
-            <img src={img} alt="bobbie-logo" className="inline-block" />
+            <img src={img} alt="bobbie-logo" className="w-[305px] h-[100px] inline-block" />
           </div>
           <div  className="flex flex-col mt-[6vh] text-center mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw] font-[capriola] lg:leading-10">
             <p className="z-10 text-[24px] ">Junior Full Stack Developer | AFOL | HND Web Engineering</p>
             <p className="text-[16px] z-10 ">Open-minded · Curious · Creative </p>
           <p className="text-center flex flex-row font-[Chivo] text-[20px] text-md mt-4">
-          Taking a multidisciplinary approach, my objective is to build applications and websites that function effectively, deliver optimal solutions, bring enjoyment, and leave a lasting visual impact!
+          Taking a multidisciplinary approach, my objective is to build applications and websites that function effectively, bring enjoyment, and leave a lasting visual impact!
             </p>
           </div>
           </div>
