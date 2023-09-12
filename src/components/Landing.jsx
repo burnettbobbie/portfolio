@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/bouncy ball.json";
@@ -9,10 +10,12 @@ const Landing = () => {
   return (
     <>
       <section className="flex items-center justify-center max-w-fit h-screen mx-auto relative pt-[80vh] xs:pt-[15vh] sm:pt-[10vh]  ">
-      <div alt="bobbie in tv" className="rounded-[15px] border-[#767676] border-[7px] hidden md:block scale-100 lg:scale-[1] mt-[-55vh] p-0 shadow-white shadow-[-15px_-15px_150px_10px] rotate-[-10deg] absolute">
-        <video src={vid} loop autoPlay muted className="rounded-[15px] bg-transparent border-black">
+      <motion.div       initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: -100, opacity: 0 }}  className="rounded-[15px] border-[#767676] border-[7px] hidden md:block scale-100 lg:scale-[1] mt-[-55vh] p-0 shadow-white shadow-[-15px_-15px_150px_10px] rotate-[-10deg] absolute">
+        <video src={vid} loop autoPlay muted className="rounded-[15px] bg-transparent border-black " alt="bobbie in tv">
         </video>
-        </div>
+        </motion.div>
         <div className="text-white text-center ">
           <div className="animation-container ">
             <Lottie
@@ -25,7 +28,7 @@ const Landing = () => {
             <p className="z-10 text-[24px] ">Junior Full Stack Developer | AFOL | HND Web Engineering</p>
             <p className="text-[16px] z-10 ">Open-minded · Curious · Creative </p>
           <p className="text-center flex flex-row font-[Chivo] text-[20px] text-md mt-4">
-          Taking a multidisciplinary approach, my objective is to build applications and websites that function effectively, deliver optimal solutions, bring enjoyment, and leave a lasting visual impact &nbsp; ⋆ ｡°✩
+          Taking a multidisciplinary approach, my objective is to build applications and websites that function effectively, deliver optimal solutions, bring enjoyment, and leave a lasting visual impact!
             </p>
           </div>
           </div>
