@@ -22,7 +22,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.5)} >
-      <div className="bg-[rgba(1,1,1,0.9)] min-h-[900px] f items-center  w-[85vw] p-5 rounded-2xl md:w-[70vw] lg:w-[40vw] xl:w-[44vw]">
+      <div className="bg-[rgba(1,1,1,0.9)] min-h-[900px] f items-center  w-[85vw] p-5 rounded-2xl md:w-[70vw] lg:w-[40vw] xl:w-[44vw] ">
         <div className="relative w-full  ">
             <Carousel showThumbs={false} showStatus={false} className="lg:h-[300px]">
               {images.map((image, idx) => (
@@ -53,7 +53,7 @@ const ProjectCard = ({
                 />
               </div>
         </div>
-        <div className="mt-2 text-white text-[16px] min-h-[590px]">
+        <div className="mt-2 text-white text-[16px] min-h-[590px] lg:min-h-[610px] ">
           <h3 className=" font-bold text-[20px]">{name}</h3>
           <p className="mt-2 ">{description}</p>
           <p className="m-1  text-yellow-100">What I Enjoyed</p>
@@ -69,7 +69,7 @@ const ProjectCard = ({
             <p>No</p>
           )}
           <p className="m-1 text-yellow-100">Future thoughts</p>
-          {improvePoints && improvePoints.length > 0 ? (
+       
             <ul className="text-[14px]">
               {improvePoints.map((point, index) => (
                 <li key={`improve-point-${index}`}>
@@ -77,9 +77,7 @@ const ProjectCard = ({
                 </li>
               ))}
             </ul>
-          ) : (
-            <p>No improvement points to display.</p>
-          )}
+      
         </div>
         <div className="mt-2 flex items-center flex-wrap w-full justify-items-center justify-center gap-4">
           {tags.map((tag) => (
