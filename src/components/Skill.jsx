@@ -20,7 +20,7 @@ const Skill = ({ skillImage, skillAlt, skillDescription, variants, detailedDescr
       detailedDescription={detailedDescription}
     >
       <img src={skillImage} alt={skillAlt} variant={variants} style={{ opacity: isHovered ? 0 : 1 }}/>
-      {isHovered && <p className="skill-description">{skillDescription}</p>}
+      {isHovered && <p className="w-[70px] h-[70px] skill-description">{skillDescription}</p>}
     </motion.div>
   );
 };

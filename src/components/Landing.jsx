@@ -2,14 +2,17 @@ import React from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/bouncy ball.json";
 import img from '../assets/bobbienodot.png';
-import gif from '../assets/bobbie-tv-op.gif';
+import vid from '../assets/bobbie-tv.mp4';
 
 
 const Landing = () => {
   return (
     <>
       <section className="flex items-center justify-center max-w-fit h-screen mx-auto relative pt-[80vh] xs:pt-[15vh] sm:pt-[10vh]  ">
-      <img src={gif} alt="gif of tv" className="hidden md:block scale-100 lg:scale-105 mt-[-55vh] p-0 shadow-white shadow-[0px_5px_150px_15px] rotate-[-10deg] rounded-[20px] absolute"/>
+      <div alt="bobbie in tv" className="rounded-[15px] border-[#767676] border-[7px] hidden md:block scale-100 lg:scale-[1] mt-[-55vh] p-0 shadow-white shadow-[-15px_-15px_150px_10px] rotate-[-10deg] absolute">
+        <video src={vid} loop autoPlay muted className="rounded-[15px] bg-transparent border-black">
+        </video>
+        </div>
         <div className="text-white text-center ">
           <div className="animation-container ">
             <Lottie
