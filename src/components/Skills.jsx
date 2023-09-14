@@ -44,7 +44,7 @@ const Skills = () => {
   return (
     < >
       <motion.div variants={textVariant()} className="mt-[0vh]">
-        <img src={img} alt="skills"/>
+        <img src={img} className="w-[200px] h-[80px]" alt="skills"/>
       </motion.div>
 
       <motion.p

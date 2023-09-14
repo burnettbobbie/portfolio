@@ -48,6 +48,7 @@ import ocs3 from './ocs3-min.png';
 import ocs4 from './ocs4-min.png';
 import ocs5 from './ocs5-min.png';
 import ocs6 from './ocs6-min.png';
+import ocs7 from './ocs7.png';
 import skillsjs from '../assets/skills-js.png'
 import skillscss from '../assets/skills-css.png'
 import skillshtml from '../assets/skills-html.png'
@@ -92,6 +93,7 @@ export {
   ocs4,
   ocs5,
   ocs6,
+  ocs7,
   otzi,
   otzi1,
   otzi2,

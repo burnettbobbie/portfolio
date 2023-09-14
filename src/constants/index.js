@@ -34,6 +34,7 @@ import {
   ocs4,
   ocs5,
   ocs6,
+  ocs7,
   hospital,
   hosp1,
   hosp2,
@@ -155,7 +156,6 @@ const technologies = [
   }
 
 ];
-
 
 
 const projects = [
@@ -295,7 +295,7 @@ const projects = [
         icon: axios
       },
     ],
-    images: [ocs6, ocs1, ocs3, ocs4, ocs5],
+    images: [ocs6, ocs1, ocs4, ocs5, ocs7],
     source_code_link: "https://github.com/burnettbobbie/ObanshireCubScouts",
     view_site: "https://ocs-client.netlify.app/"
   },

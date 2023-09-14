@@ -95,7 +95,7 @@ const Work = () => {
   return (
     <>
       <motion.div  variants={textVariant()}>
-        <img src={img} alt="projects"/>
+        <img src={img} className="w-[280px] h-[70px]" alt="projects"/>
       </motion.div>
       <div className="w-full flex">
         <motion.p
