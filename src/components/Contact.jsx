@@ -92,7 +92,7 @@ const Contact = () => {
     <div className={`items-center justify-center w-full h-full flex xl:flex-row gap-10 overflow-hidden`} >
       <motion.div variants={fadeIn("down", "spring", 0, 1)}
         className=" bg-zinc-900 p-8 rounded-2xl">
-        <img src={img} className="w-[250px] h-[70px]" alt="contact"/>
+        <img src={img} className="w-[279px] h-[72px]" alt="contact"/>
         <form
           ref={formRef}
           onSubmit={handleSubmit}

@@ -20,7 +20,7 @@ const Landing = () => {
               animationData={animationData}
               className="lottie-animation "
             />
-            <img src={img} alt="bobbie-logo" className="w-[305px] h-[100px] inline-block" />
+            <img src={img} alt="bobbie-logo" className="w-[308px] h-[97px] inline-block" />
           </div>
           <div  className="flex flex-col mt-[6vh] text-center mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw] font-[capriola] lg:leading-10">
             <p className="z-10 text-[24px] ">Junior Full Stack Developer </p>
