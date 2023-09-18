@@ -58,7 +58,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color:#ffe035;
+  background-color:#f1f13e;
   transition-duration: 0.5s;
   transition-property: background-color; 
 }
@@ -254,5 +254,4 @@
 }
 }
 
-/* IMAGES */
 
