@@ -248,7 +248,7 @@ const projects = [
     ],
     images:[ theatre, ltclogin, ltcregister, ltcadmin, ltcusers, ltcblogman, ltcblogex],
     source_code_link: "https://github.com/burnettbobbie/theatre-blog-prototype",
-    view_site: "https://rburnett.student-hosting.college/TheLocalTheatreCompany/"
+    view_site: "https://ltc-prototype.000webhostapp.com/"
   },
   {
     name: "Obanshire Cub Scouts",
