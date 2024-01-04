@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,6 +17,9 @@
 
 }
 
+.Krona{
+  font-family: 'Krona One';
+}
 
 @layer base{
   html{
@@ -32,11 +36,48 @@
   scroll-behavior: smooth;
 }
 
-.site-container{
-
+/* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
+body::before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("assets/noise4.jpeg");
+  content: '';
+  height: 300%;
+  left: -50%;
+  opacity: 0.6;
+  position: fixed;
+  top: -100%;
+  width: 300%;
 }
+
+@-moz-document url-prefix() {
+  body::before {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body::before {
+      display: none;
+  }
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0); }
+  10% { transform:translate(-5%, -10%); }
+  20% { transform:translate(-15%, 5%); }
+  30% { transform:translate(7%, -25%); }
+  40% { transform:translate(-5%, 25%); }
+  50% { transform:translate(-15%, 10%); }
+  60% { transform:translate(15%, 0%); }
+  70% { transform:translate(0%, 15%); }
+  80% { transform:translate(3%, 35%); }
+  90% { transform:translate(-10%, 10%); }
+}
+
+
 .folio-bg{
-  /* background: rgba(24, 24, 27, 0.8); */
+  /* background: grey; */
+  background: rgba(24, 24, 27, 0.8);
   background: linear-gradient(140deg, rgba(24,24,27,0.8) 0%, rgba(105,105,103,0.8) 23%,rgba(24,24,27,0.866) 60%, rgba(24,24,27,0.866) 100%);
 }
 
@@ -76,7 +117,6 @@
   padding-bottom: 100px;
   display: block;
 }
-
 
 .animation-container {
   position: relative;
