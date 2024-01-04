@@ -37,7 +37,7 @@
 }
 
 /* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
-/* body::before {
+body::before {
   animation: grain 8s steps(10) infinite;
   background-image: url("assets/noise4.jpeg");
   content: '';
@@ -72,7 +72,7 @@
   70% { transform:translate(0%, 15%); }
   80% { transform:translate(3%, 35%); }
   90% { transform:translate(-10%, 10%); }
-} */
+}
 
 
 .folio-bg{
