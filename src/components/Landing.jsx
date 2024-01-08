@@ -25,7 +25,7 @@ const Landing = () => {
           </div>
           <div  className="flex flex-col mt-[6vh] text-left mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw]  lg:leading-10">
             <p className="z-10 text-[30px] Krona ">Junior Full Stack Developer </p>
-            <div className="mt-6 rounded-[20px] shadow-slate-50 shadow-2xl ">
+            <div className="mt-6 rounded-[20px] shadow-slate-50 shadow-sm ">
               <div className="bg-[rgba(255,255,255,0.2)] border-b-[10px] bg-gradient-to-br from-zinc-400 to-zinc-900 border-zinc-50 drop-shadow-xl shadow-[inset_8px_8px_20px_white] rounded-[20px] p-[35px] flex justify-evenly items-center">
                 <p className="text-white text-[20px] text-center font-light ">
                 Taking a multidisciplinary approach, my objective is to build applications and websites that function effectively, bring enjoyment, and leave a lasting visual impact!
