@@ -21,14 +21,14 @@ const Landing = () => {
               className="lottie-animation "
             />
             <img src={img} alt="bobbie-logo" className="w-[308px] h-[97px] inline-block" />
-            <p className="text-right Krona text-[20px]">Burnett</p>
+            <p className="text-right font-krona text-[20px]">Burnett</p>
           </div>
           <div  className="flex flex-col mt-[6vh] text-left mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw] ">
-            <p className="z-10 text-[30px] Krona ">Junior Full Stack Developer </p>
+            <p className="z-10 text-[30px] font-krona ">Junior Full Stack Developer </p>
             <div className="mt-2 rounded-[10px] shadow-zinc-900  shadow-2xl">
-              <div className="border-b-[7px] bg-gradient-to-bl from-indigo-200 via-zinc-700 to-zinc-950 border-zinc-50 drop-shadow-xl shadow-[inset_3px_3px_20px_white] rounded-[20px] pl-10 pr-10 pt-8 pb-8 flex justify-evenly items-center">
-                <p className="text-white text-[16px] leading-8 text-left Krona ">
-                Taking a multidisciplinary approach, my objective is to build applications and websites that function effectively, bring enjoyment, and leave a lasting visual impact!
+              <div className="border-b-[7px] bg-gradient-to-bl from-indigo-200 via-zinc-700 to-zinc-950 border-zinc-50 drop-shadow-xl shadow-[inset_3px_3px_20px_white] rounded-[20px] pl-10 pr-24 pt-8 pb-8 flex justify-evenly items-center">
+                <p className="text-white text-[20px] font-light leading-8 text-left tracking-wide">
+                Taking a multidisciplinary approach, I aim to build applications and websites that function effectively, bring enjoyment, and leave a lasting visual impact!
                 </p>
               </div>
             </div>
@@ -42,7 +42,3 @@ const Landing = () => {
 export default Landing;
 
 
-
-<p className="text-[18px] mt-6 font-[] font-extrabold tracking-[2px] text-white p-6 rounded-xl bg-gradient-to-br from-zinc-50 border-zinc-900 border-b-8 to-zinc-900 shadow-2xl shadow-zinc-50">
-Taking a multidisciplinary approach, my objective is to build applications and websites that function effectively, bring enjoyment, and leave a lasting visual impact!
-</p>

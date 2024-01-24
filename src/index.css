@@ -17,16 +17,12 @@
 
 }
 
-.Krona{
-  font-family: 'Krona One';
-}
 
 @layer base{
   html{
     font-family: 'Chivo';
   }
 }
-
 
 
 * {
