@@ -25,11 +25,11 @@ const Landing = () => {
           </div>
           <div  className="flex flex-col mt-[6vh] text-left mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw] ">
             <p className="z-10 text-[30px] font-krona ">Junior Full Stack Developer </p>
-            <div className="mt-2 rounded-[10px] shadow-zinc-900  shadow-2xl">
+            <div className="mt-2 rounded-[20px] shadow-zinc-900  shadow-2xl">
               <div className="border-b-[7px] bg-gradient-to-bl from-indigo-200 via-zinc-700 to-zinc-950 border-zinc-50 drop-shadow-xl shadow-[inset_3px_3px_20px_white] rounded-[20px] pl-10 pr-24 pt-8 pb-8 flex justify-evenly items-center">
-                <p className="text-white text-[20px] font-light leading-8 text-left tracking-wide">
+                <p className="text-white text-[16px] font-[Capriola] font-[100] leading-8 text-left tracking-[2px]"><i>
                 Taking a multidisciplinary approach, I aim to build applications and websites that function effectively, bring enjoyment, and leave a lasting visual impact!
-                </p>
+                </i></p>
               </div>
             </div>
           </div>
