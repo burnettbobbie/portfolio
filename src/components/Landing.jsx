@@ -23,7 +23,7 @@ const Landing = () => {
             <img src={img} alt="bobbie-logo" className="w-[308px] h-[97px] inline-block" />
             <p className="text-right font-krona text-[20px]">Burnett</p>
           </div>
-          <div  className="flex flex-col mt-[6vh] md:text-left mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw] ">
+          <div  className="flex flex-col xs:mt-[10vh] md:mt-[6vh] md:text-left mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw] ">
             <p className="z-10 text-[30px] font-krona ">Junior Full Stack Developer </p>
             <div className="mt-2 rounded-[20px] shadow-zinc-900  shadow-2xl">
               <div className="border-b-[3px] bg-gradient-to-bl from-indigo-200 via-zinc-700 to-zinc-950 border-zinc-50 drop-shadow-xl shadow-[inset_3px_3px_20px_white] rounded-[20px] xs:p-6 md:pl-10 md:pr-24 md:pt-8 md:pb-8 flex justify-evenly items-center">
