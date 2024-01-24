@@ -23,11 +23,11 @@ const Landing = () => {
             <img src={img} alt="bobbie-logo" className="w-[308px] h-[97px] inline-block" />
             <p className="text-right Krona text-[20px]">Burnett</p>
           </div>
-          <div  className="flex flex-col mt-[6vh] text-left mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw]  lg:leading-10">
+          <div  className="flex flex-col mt-[6vh] text-left mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw] ">
             <p className="z-10 text-[30px] Krona ">Junior Full Stack Developer </p>
-            <div className="mt-6 rounded-[20px] shadow-zinc-900  shadow-2xl">
-              <div className="bg-[rgba(208,207,207,0.2)] border-b-[3px] bg-gradient-to-bl from-blue-100 via-zinc-600 to-zinc-900 border-zinc-50 drop-shadow-xl shadow-[inset_8px_8px_20px_white] rounded-[20px] pl-10 pr-10 pt-6 pb-6 flex justify-evenly items-center">
-                <p className="text-white text-[18px] text-center font-normal tracking-wide ">
+            <div className="mt-2 rounded-[10px] shadow-zinc-900  shadow-2xl">
+              <div className="border-b-[7px] bg-gradient-to-bl from-indigo-200 via-zinc-700 to-zinc-950 border-zinc-50 drop-shadow-xl shadow-[inset_3px_3px_20px_white] rounded-[20px] pl-10 pr-10 pt-8 pb-8 flex justify-evenly items-center">
+                <p className="text-white text-[16px] leading-8 text-left Krona ">
                 Taking a multidisciplinary approach, my objective is to build applications and websites that function effectively, bring enjoyment, and leave a lasting visual impact!
                 </p>
               </div>
