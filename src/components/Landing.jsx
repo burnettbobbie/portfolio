@@ -26,11 +26,14 @@ const Landing = () => {
           <div  className="flex flex-col xs:mt-[15vh] md:mt-[6vh] md:text-left mb-[40vh] xs:mb-[15vh] sm:mb-[0] mx-[15vw] ">
             <p className="z-10 text-[30px] font-krona ">Junior Full Stack Developer </p>
             <div className="mt-2 rounded-[20px] shadow-zinc-900  shadow-2xl">
-              <div className="border-b-[3px] bg-gradient-to-bl from-indigo-200 via-zinc-700 to-zinc-950 border-zinc-50 drop-shadow-xl shadow-[inset_3px_3px_20px_white] rounded-[20px] xs:p-6 md:pl-10 md:pr-24 md:pt-8 md:pb-8 flex justify-evenly items-center">
-                <p className="text-white text-[16px] font-[Capriola] font-[100] leading-8 md:text-left tracking-[2px]"><i>
-                Taking a multidisciplinary approach, I aim to build applications and websites that function effectively, bring enjoyment, and leave a lasting visual impact!
-                </i></p>
-              </div>
+              {/* <div className="border-b-[3px] bg-gradient-to-bl from-indigo-200 via-zinc-700 to-zinc-950 border-zinc-50 drop-shadow-xl shadow-[inset_3px_3px_20px_white] rounded-[20px] xs:p-6 md:pl-10 md:pr-24 md:pt-8 md:pb-8 flex justify-evenly items-center"> */}
+                <p className="text-white text-[46px] font-[Krona One] font-[500] leading-8 md:text-left tracking-[10px] -rotate-12">
+                  {/* <i> */}
+UNDER CONSTRUCTION
+                {/* Taking a multidisciplinary approach, I aim to build applications and websites that function effectively, bring enjoyment, and leave a lasting visual impact! */}
+                {/* </i> */}
+                </p>
+              {/* </div> */}
             </div>
           </div>
         </div>
