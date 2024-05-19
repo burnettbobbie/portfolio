@@ -12,17 +12,17 @@ import { useState } from "react";
 const ServiceCard = ({ title}) => (
 
     <motion.div
-      className=" mt-[5vh] rounded-[20px] shadow-blue-900 shadow-2xl w-[200px] ">
+      className=" mt-[10vh] mb-[5vh]  rounded-[20px] shadow-blue-900 shadow-2xl w-[200px]  ">
       <div
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-[rgba(255,255,255,0.3)] border-b-[10px] border-slate-600 drop-shadow-2xl h-[100px] shadow-[inset_8px_8px_30px_white] rounded-[20px] p-[35px] flex justify-evenly items-center flex-col"
+        className="bg-[rgba(255,255,255,0.3)] border-b-[10px] service-type border-slate-600 drop-shadow-2xl h-[100px] shadow-[inset_8px_8px_30px_white] rounded-[20px] p-[35px] flex  flex-col"
       >
 
-        <h3 className="text-zinc-900 text-[18px] font-extrabold text-center tracking-[4px]">
+        <h3 className="text-zinc-900 text-[18px] font-extrabold text-center  tracking-[4px] ">
           {title}
         </h3>
       </div>
@@ -49,7 +49,7 @@ const Skills = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-2 text-white text-[20px] font-extralight max-w-5xl mx-[10px] leading-[30px]"
+        className="mt-6 text-white text-[20px] font-extralight max-w-5xl mx-[0px] leading-[30px]"
       >
        Proficient in both front and back-end development, I have practical experience building dynamic and responsive websites and applications. My design sensibility and attention to detail translate into clean and visually appealing user interfaces. With a robust grasp of the entire web development stack, I implement clean code practices to ensure the maintainability and efficiency of my projects. I excel in problem-solving, adapting to new technologies and trends, and effectively communicating within team environments.
       </motion.p>

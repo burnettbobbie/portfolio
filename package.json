@@ -23,6 +23,7 @@
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "react-use-scroll-snap": "^0.0.4",
+    "semver": "^7.6.2",
     "three": "^0.149.0"
   },
   "devDependencies": {

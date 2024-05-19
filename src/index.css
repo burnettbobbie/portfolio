@@ -74,7 +74,7 @@ body::before {
 .folio-bg{
   /* background: grey; */
   background: rgba(24, 24, 27, 0.8);
-  background: linear-gradient(140deg, rgba(24,24,27,0.8) 0%, rgba(105,105,103,0.8) 23%,rgba(24,24,27,0.866) 60%, rgba(24,24,27,0.866) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 0%, rgba(10, 10, 10, 0.76) 13%, rgba(13, 13, 18, 0.66) 23%,rgba(36, 36, 57, 0.866) 60%, rgba(0, 0, 0, 0.866) 100%);
 }
 
 ::-webkit-scrollbar{
@@ -181,6 +181,11 @@ body::before {
 
 .services{
   text-shadow: rgb(255, 255, 255) 1px 1px 8px;
+}
+
+.service-type{
+  align-items: center;
+  justify-content: center;
 }
 .my-tech{
   display: flex;
