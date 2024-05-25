@@ -71,10 +71,35 @@ body::before {
 }
 
 
+
+.skill-image {
+  width: 70px;
+  height: 70px;
+  background: #18181b83;
+  border-radius: 8px;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 10px 15px -3px #455a64, 0 4px 6px -4px rgb(0 0 0 / 0.5), 0 0 10px rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow:0 10px 15px -3px #455a64, 0 4px 6px -4px rgb(0 0 0 / 0.5), 0 0 20px rgba(255, 255, 255, 1);
+  }
+  100% {
+    box-shadow:0 10px 15px -3px #455a64, 0 4px 6px -4px rgb(0 0 0 / 0.5), 0 0 10px rgba(255, 255, 255, 0);
+  }
+}
+
+.glimmer {
+  animation: glow 4s infinite;
+}
+
+
 .folio-bg{
   /* background: grey; */
-  background: rgba(24, 24, 27, 0.8);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 0%, rgba(10, 10, 10, 0.76) 13%, rgba(13, 13, 18, 0.66) 23%,rgba(36, 36, 57, 0.866) 60%, rgba(0, 0, 0, 0.866) 100%);
+  /* background: rgba(0, 0, 0, 0.443); */
+  background: linear-gradient(110deg, #18181bac 35%, rgba(255, 251, 0, 0.242) 100%);
 }
 
 ::-webkit-scrollbar{

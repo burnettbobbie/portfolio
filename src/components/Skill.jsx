@@ -19,7 +19,7 @@ const Skill = ({ skillImage, skillAlt, skillDescription, variants, detailedDescr
       variants={variants}
       detailedDescription={detailedDescription}
     >
-      <img src={skillImage} alt={skillAlt} variant={variants} className="w-[70px] h-[70px]" style={{ opacity: isHovered ? 0 : 1 }}/>
+      <img src={skillImage} alt={skillAlt} variant={variants} className="skill-image glimmer w-[70px] h-[70px] bg-[#18181b83] shadow-lg shadow-slate-700 rounded-lg" style={{ opacity: isHovered ? 0 : 1 }}/>
       {isHovered && <p className="skill-description">{skillDescription}</p>}
     </motion.div>
   );
