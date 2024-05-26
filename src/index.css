@@ -92,14 +92,14 @@ body::before {
 }
 
 .glimmer {
-  animation: glow 4s infinite;
+  /* animation: glow 4s infinite; */
 }
 
 
 .folio-bg{
   /* background: grey; */
   /* background: rgba(0, 0, 0, 0.443); */
-  background: linear-gradient(110deg, #18181bac 35%, rgba(255, 251, 0, 0.242) 100%);
+  background: linear-gradient(110deg, #27272de3 35%, rgba(255, 251, 0, 0.1) 100%);
 }
 
 ::-webkit-scrollbar{

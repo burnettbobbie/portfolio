@@ -26,7 +26,7 @@ const Landing = () => {
           </div>
     <div  className="flex flex-col xs:mt-[15vh] md:mt-[6vh] md:text-left mb-[40vh] xs:mb-[15vh] sm:mb-[0]  ">
             <motion.p variants={fadeIn("", "", 0.5, 5)} initial="hidden"
-            animate="show" className="z-10 text-[40px] md:text-[70px] flex-wrap bg-clip-text text-transparent font-krona bg-gradient-to-tr from-white  to-white">Junior <span className=""> Full Stack</span> Developer </motion.p>
+            animate="show" className="z-10 text-[40px] md:text-[60px] flex-wrap bg-clip-text text-transparent font-krona bg-gradient-to-r from-white  via-white  to-zinc-300">Junior <span className=""> Full Stack</span> Developer </motion.p>
             
           </div>
         </div>
