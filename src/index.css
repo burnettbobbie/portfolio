@@ -34,12 +34,12 @@
 
 /* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
 body::before {
-  animation: grain 8s steps(10) infinite;
+  animation: grain 12s steps(10) infinite;
   background-image: url("assets/noise4.jpeg");
   content: '';
   height: 300%;
   left: -50%;
-  opacity: 0.6;
+  opacity: 0.8;
   position: fixed;
   top: -100%;
   width: 300%;
@@ -51,11 +51,6 @@ body::before {
   }
 }
 
-@media only screen and (max-width: 1023px) {
-  body::before {
-      display: none;
-  }
-}
 
 @keyframes grain {
   0%, 100% { transform:translate(0, 0); }
@@ -72,34 +67,25 @@ body::before {
 
 
 
-.skill-image {
-  width: 70px;
-  height: 70px;
-  background: #18181b83;
-  border-radius: 8px;
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 10px 15px -3px #455a64, 0 4px 6px -4px rgb(0 0 0 / 0.5), 0 0 10px rgba(255, 255, 255, 0);
-  }
-  50% {
-    box-shadow:0 10px 15px -3px #455a64, 0 4px 6px -4px rgb(0 0 0 / 0.5), 0 0 20px rgba(255, 255, 255, 1);
-  }
-  100% {
-    box-shadow:0 10px 15px -3px #455a64, 0 4px 6px -4px rgb(0 0 0 / 0.5), 0 0 10px rgba(255, 255, 255, 0);
-  }
-}
-
-.glimmer {
-  /* animation: glow 4s infinite; */
-}
-
-
 .folio-bg{
-  /* background: grey; */
-  /* background: rgba(0, 0, 0, 0.443); */
   background: linear-gradient(110deg, #27272de3 35%, rgba(255, 251, 0, 0.1) 100%);
+}
+
+.wide-screen-landing{
+  /* text-shadow: 0px 0px 1px rgba(32, 37, 63, 0.135); */
+  filter: drop-shadow(1px 1px 0px #262d51);
+}
+
+.burnett{
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.685);
+  color: white;
+
+}
+
+
+
+.mobile-landing{
+  display: none;
 }
 
 ::-webkit-scrollbar{
@@ -108,8 +94,6 @@ body::before {
 
 ::-webkit-scrollbar-track {
   background: #18181b;
-  /* box-shadow: inset 1px 1px 4px 0px rgb(131, 130, 130) ; */
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -307,6 +291,29 @@ body::before {
   transform: scale(1.3);
   
 }
+
+
+ 
+}
+
+@media screen and (max-width:500px){
+  .folio-bg{
+    background: linear-gradient(130deg, #18181b 5%,#27272d6b 35%, rgba(255, 251, 0, 0.26) 100%);
+  }
+
+
+  .mobile-landing{
+    display: block;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+
+  .wide-screen-landing{
+    display: none;
+  }
+
+  
 }
 
 @media screen and (min-width: 500px) {
@@ -318,6 +325,10 @@ body::before {
   font-size: 20px;
   margin: 16px;
 }
+.tv-animation{
+  display: inline-block;
+}
+
 }
 
 
