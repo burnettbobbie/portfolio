@@ -88,7 +88,7 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "slide-down" : "slide-up"
-            } p-6 bg-[#18181b] absolute h-[100vh] flex items-center justify-center top-12  right-0 my-2 w-[100vw] z-[12] transition-all duration-500 ease-in-out`}
+            } p-6 bg-[#18181b] absolute h-[100vh] flex items-center justify-center top-12 rounded-2xl right-0 my-2 w-[100vw] z-[12] transition-all duration-500 ease-in-out`}
           >
             <ul className="list-none flex justify-center items-center flex-1 flex-col gap-4">
               {navLinks.map((nav) => (

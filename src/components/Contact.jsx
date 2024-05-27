@@ -89,7 +89,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={`items-center justify-center w-full h-full flex xl:flex-row gap-10 overflow-hidden`} >
+    <div className={`items-center justify-center w-full h-full flex xl:flex-row gap-10 mt-10 overflow-hidden`} >
       <motion.div variants={fadeIn("down", "spring", 0, 1)}
         className=" bg-zinc-900 p-8 rounded-2xl">
         <img src={img} className="w-[279px] h-[72px]" alt="contact"/>

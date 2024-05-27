@@ -164,7 +164,7 @@ const Work = () => {
   return (
     <>
       <motion.div  variants={textVariant()}>
-        <img src={img} className="w-[280px] h-[70px]" alt="projects"/>
+        <img src={img} className="w-[280px] h-[70px] mt-4" alt="projects"/>
       </motion.div>
       <div className="w-full flex">
         <motion.p
