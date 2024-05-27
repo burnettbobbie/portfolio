@@ -27,9 +27,8 @@ const Landing = () => {
           <div className="flex flex-col md:mt-[6vh] md:text-left max-w-[100vw]">
             <motion.p variants={fadeIn("", "", 0.5, 5)} initial="hidden"
             animate="show" className="wide-screen-landing z-10 text-[3rem] md:text-[60px] flex-wrap sm:mt-8 bg-clip-text text-transparent text-center font-krona bg-gradient-to-br from-zinc-300 via-white to-zinc-300">Junior Full Stack Developer </motion.p>
-            <motion.p variants={fadeIn("", "", 0.5, 5)} initial="hidden"
-            animate="show" className="mobile-landing z-10 text-[2.7rem] p-6 text-right  md:text-[60px] border-b-[5px] m-2 shadow-[0px_25px_30px_-12px] mt-[-40vh] shadow-slate-500 border-white rounded-2xl flex-wrap bg-clip-text text-transparent font-krona bg-gradient-to-r from-yellow-50  via-white  to-slate-300">Junior<br></br> Full Stack Developer </motion.p>
-            
+          <motion.p variants={fadeIn("", "", 0.5, 5)} initial="hidden"
+            animate="show" className="mobile-landing z-10 text-[2.7rem] text-center md:text-[60px] flex-wrap font-krona">Junior<br></br> Full Stack Developer </motion.p>
           </div>
         </div>
       </section>

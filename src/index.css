@@ -65,10 +65,26 @@ body::before {
   90% { transform:translate(-10%, 10%); }
 }
 
+/* Animation for mobile nav */
+
+.slide-up {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+}
+
+.slide-down {
+  max-height: 100vh;
+  opacity: 1;
+  overflow: hidden;
+  transform: translateY(0);
+}
 
 
 .folio-bg{
   background: linear-gradient(110deg, #27272de3 35%, rgba(255, 251, 0, 0.1) 100%);
+  box-shadow: inset -20px 0px 100px 10px rgba(0, 0, 0, 0.737);
 }
 
 .wide-screen-landing{
@@ -81,8 +97,6 @@ body::before {
   color: white;
 
 }
-
-
 
 .mobile-landing{
   display: none;
@@ -298,7 +312,7 @@ body::before {
 
 @media screen and (max-width:500px){
   .folio-bg{
-    background: linear-gradient(130deg, #18181b 5%,#27272d6b 35%, rgba(255, 251, 0, 0.26) 100%);
+    background: linear-gradient(140deg, #18181b 5%,#27272d1d 35%, rgba(255, 251, 0, 0.265) 100%);
   }
 
 
@@ -306,7 +320,7 @@ body::before {
     display: block;
     font-weight: 500;
     color: white;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    /* text-shadow: 1px 1px 2px rgb(0, 0, 0); */
   }
 
   .wide-screen-landing{

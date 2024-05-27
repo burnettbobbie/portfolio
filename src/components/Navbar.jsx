@@ -50,7 +50,7 @@ const Navbar = () => {
         scrolled ? "bg-zinc-900" : "bg-transparent"
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-[] mx-auto">
+      <div className="w-full flex justify-between items-center mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -87,14 +87,14 @@ const Navbar = () => {
 
           <div
             className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 bg-[#18181bee] absolute top-12 shadow-black-900 shadow-[0px_25px_50px_-20px] right-0 my-2 w-[100vw] z-[12] `}
+              toggle ? "slide-down" : "slide-up"
+            } p-6 bg-[#18181b] absolute h-[100vh] flex items-center justify-center top-12  right-0 my-2 w-[100vw] z-[12] transition-all duration-500 ease-in-out`}
           >
             <ul className="list-none flex justify-center items-center flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`  cursor-pointer text-[16px] ${
+                  className={`cursor-pointer text-[26px] font-krona ${
                     active === nav.id ? "text-yellow-200" : "text-white"
                   }`}
                   onClick={() => {
