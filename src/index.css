@@ -11,12 +11,11 @@
 @tailwind utilities;
 
 
+/* fonts */
 @font-face {
   font-family: 'Movement';
   src: local('Movement'), url(./assets/Webfonts/Movement-DirectBlack.woff2) format('woff');
-
 }
-
 
 @layer base{
   html{
@@ -32,7 +31,7 @@
   scroll-behavior: smooth;
 }
 
-/* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
+/* Grainy texture background effect by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
 body::before {
   animation: grain 12s steps(10) infinite;
   background-image: url("assets/noise4.jpeg");
@@ -65,43 +64,12 @@ body::before {
   90% { transform:translate(-10%, 10%); }
 }
 
-/* Animation for mobile nav */
-
-.slide-up {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(-10px);
-}
-
-.slide-down {
-  max-height: 100vh;
-  opacity: 1;
-  overflow: hidden;
-  transform: translateY(0);
-}
-
-
 .folio-bg{
-  background: linear-gradient(110deg, #27272de3 35%, rgba(255, 251, 0, 0.1) 100%);
-  box-shadow: inset -20px 0px 100px 10px rgba(0, 0, 0, 0.737);
+  background: linear-gradient(114deg, #18181bee 30%,#0c0c3657 30%, #f9f93473 100%);
+  /* box-shadow: inset -20px 0px 100px 5px rgba(23, 23, 26, 0.824); */
 }
 
-.wide-screen-landing{
-  /* text-shadow: 0px 0px 1px rgba(32, 37, 63, 0.135); */
-  filter: drop-shadow(1px 3px 0px #293d8e8c);
-}
-
-.burnett{
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.685);
-  color: white;
-
-}
-
-.mobile-landing{
-  display: none;
-}
-
+/*//////////////// scrollbar styles //////////////////////*/
 ::-webkit-scrollbar{
   width: 7px;
 }
@@ -128,6 +96,51 @@ body::before {
   transition-duration: 0.5s;
   transition-property: background-color; 
 }
+
+/* NAV STYLES */
+
+/* Animation for mobile nav menu */
+.slide-up {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+}
+.slide-down {
+  max-height: 100vh;
+  opacity: 1;
+  overflow: hidden;
+  transform: translateY(0);
+}
+
+
+.portfolio:hover{
+  text-decoration:underline wavy;
+
+}
+
+.portfolio:not(:hover){
+  text-decoration:overline;
+ 
+}
+
+
+/* LANDING PAGE */
+
+.wide-screen-landing{
+/* filter: drop-shadow(2px 2px 0px  rgba(4, 4, 4, 0.509)); */
+
+}
+
+.mobile-landing{
+  display: none;
+}
+
+
+.burnett{
+}
+
+
 .navList{
   font-family: 'Capriola';
 }
@@ -140,13 +153,10 @@ body::before {
 .animation-container {
   position: relative;
   display: inline-block; 
-
 }
 
-/* Lottie animation positioning */
 .lottie-animation {
   position: absolute;
-  /* left: 37%; */
   transform: translateX(37%) translateY(-40%); 
   width: 300px; 
   height: 300px;   
@@ -156,6 +166,7 @@ body::before {
   color: white;
 }
 
+/*********************** projects carousel slider****************************/
 .carousel-slider{
   /* border-radius: 20px; */
   border: 1px solid rgba(40, 40, 40, 0.693);
@@ -165,43 +176,38 @@ body::before {
 .control-arrow{
   background-color: rgba(88, 88, 88, 0.741) !important;
   opacity: 0.8 !important;
-  /* box-shadow: inset 0px 0px 5px 4px black  !important; */
   width: 8%;
 }
 
 .control-arrow:hover{
   background-color:  rgba(172, 170, 170, 0.741) !important;
   opacity: 1 !important;
-  /* box-shadow: inset 0px 0px 10px 2px black  !important; */
 }
 
 .control-arrow.control-prev{
-  /* border-radius: 20px 0px 0px 20px ; */
   margin-left:-1%;
   border-left: 2px solid black !important;
 }
 
-
 .control-arrow.control-next{
-  /* border-radius: 0px 19px 19px 0px; */
   margin-right:-1%;
 }
-
 
 .control-dots{
   display: none;
 }
 
-.portfolio:hover{
-  text-decoration:underline wavy;
-
+mark{
+  background-color: #f1f13e;
+  color: #18181b;
+  padding: 2px;
+  border-radius: 10px;
 }
 
-.portfolio:not(:hover){
-  text-decoration:overline;
- 
+mark.dark-mark{
+  /* background-color: #18181bee;
+  color: white; */
 }
-
 .services{
   text-shadow: rgb(255, 255, 255) 1px 1px 8px;
 }
@@ -312,7 +318,7 @@ body::before {
 
 @media screen and (max-width:500px){
   .folio-bg{
-    background: linear-gradient(140deg, #18181b 5%,#27272d1d 35%, rgba(255, 251, 0, 0.265) 100%);
+    background: linear-gradient(114deg, #18181bee 30%,#0c0c3657 30%, #d8d3409e 100%);
   }
 
 
@@ -320,7 +326,6 @@ body::before {
     display: block;
     font-weight: 500;
     color: white;
-    /* text-shadow: 1px 1px 2px rgb(0, 0, 0); */
   }
 
   .wide-screen-landing{

@@ -169,11 +169,11 @@ const Work = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-black text-[17px] max-w-full leading-[30px]"
+          className="mt-6 text-[#18181b] bg-slate-100 text-[18px] text-justify font-extralight border-[#18181b] border-0 shadow-lg shadow-slate-600 rounded-lg p-6 mx-[0px] leading-[30px] "
         >
           The following projects serve as tangible demonstrations of my skills and practical experience. Prior to implementation, wireframes and designs for all projects were created using both Figma and Adobe software whilst 
-           Git was used for version control during development. To view specific user/admin pages on the websites, please <a href="#contact" className="text-blue-500"><i>contact me</i></a> for login credentials. You may also register as a new user if preferred.
-        </motion.p>
+           Git was used for version control during development. To view specific user/admin pages on the websites, please <a href="#contact" className="text-black underline"><i>contact me</i></a> for login credentials. You may also register as a new user if preferred.
+           </motion.p>
       </div>
 
       <div className="mt-10 flex flex-wrap gap-5 items-center justify-center overflow-y-hidden">

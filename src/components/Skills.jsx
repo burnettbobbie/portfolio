@@ -49,14 +49,14 @@ const Skills = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-6 text-white text-[20px] font-extralight max-w-5xl mx-[0px] leading-[30px]"
+        className="mt-6 text-[#18181b] text-[18px] p-4 bg-slate-100 shadow-2xl border-white border-2 shadow-slate-600 pl-6 rounded-xl font-extralight max-w-5xl mx-[0px] leading-[30px]"
       >
        Proficient in both front and back-end development, I have practical experience building dynamic and responsive websites and applications. My design sensibility and attention to detail translate into clean and visually appealing user interfaces. With a robust grasp of the entire web development stack, I implement clean code practices to ensure the maintainability and efficiency of my projects. I excel in problem-solving, adapting to new technologies and trends, and effectively communicating within team environments.
-      </motion.p>
+       </motion.p>
 
       <motion.div  variants={fadeIn("left", "spring", 0)} className="services mt-0 mb-10 flex flex-wrap items-center justify-evenly ">
         {services.map((service, index) => (
-          <ServiceCard  key={service.title} index={index} {...service} />
+          <ServiceCard  key={service.title} index={index} {...service}/>
         ))}
       </motion.div>
       <motion.div className="detailed-description hidden invisible sm1:block sm1:visible">
